@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page should render correctly 1`] = `
+<footer
+  className="Footer"
+>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-flex-end MuiGrid-justify-xs-center"
+  >
+    <div
+      className="MuiGrid-root about MuiGrid-grid-xs-true"
+      items={true}
+    >
+      About
+    </div>
+    <div
+      className="MuiGrid-root terms MuiGrid-grid-xs-true"
+      items={true}
+    >
+      Terms
+    </div>
+    <div
+      className="MuiGrid-root policy MuiGrid-grid-xs-true"
+      items={true}
+    >
+      Privacy Policy
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+  >
+    Jatda Studio © 2019
+  </div>
+</footer>
+`;

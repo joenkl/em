@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    container_name: jatda-em
+    restart: always
+    build: ./
+    env_file: ./_env/dev.env
+    command: npm run dev
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/server/node_modules
+      - /app/client/node_modules
+    ports:
+      - 3000:3000 #client
+      - 5000:5000 #server

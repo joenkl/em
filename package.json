@@ -1,0 +1,28 @@
+{
+	"name": "jatda-em",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "cd server && npm run start",
+		"server": "cd server && npm run build && npm run start",
+		"client": "CHOKIDAR_USEPOLLING=true npm run start --prefix client",
+		"server-dev": "cd server && npm run dev",
+		"dev": "concurrently \"npm run server-dev\" \"npm run client\"",
+		"build": "npm run server && npm run client",
+		"install-all": "npm install && npm --prefix ./server install && npm --prefix ./client install"
+	},
+	"author": "JATDA",
+	"license": "ISC",
+	"devDependencies": {
+		"concurrently": "^4.1.0",
+		"eslint": "^5.16.0",
+		"eslint-config-airbnb": "^17.1.0",
+		"eslint-plugin-import": "^2.16.0",
+		"eslint-plugin-jsx-a11y": "^6.2.1",
+		"eslint-plugin-react": "^7.12.4"
+	},
+	"dependencies": {
+		"all": "0.0.0"
+	}
+}
